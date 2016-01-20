@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NhaTrangIzi.View.LanguagePage"
+             BackgroundColor="White"
+  >
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness"
+                Android="0, 0, 0, 0"
+                iOS="0, 20, 0, 0"
+                WinPhone="0, 0, 0, 0"
+                />
+  </ContentPage.Padding>
+  <ContentPage.Content>
+    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+      <StackLayout HorizontalOptions="CenterAndExpand">
+        <Label Text="NHA TRANG izi" FontSize="25" TextColor="Black"/>
+      </StackLayout>
+
+      <StackLayout HorizontalOptions="CenterAndExpand">
+        <Label Text="EVERYTHING IS JUST IN YOUR PALM" FontSize="12" TextColor="Gray"/>
+      </StackLayout>
+
+      <StackLayout HorizontalOptions="FillAndExpand" Padding="5">
+        <BoxView HeightRequest="3" Color="Gray"/>
+      </StackLayout>
+
+      <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="5">
+        <Button x:Name="btnVietNam" Clicked="btnLanguage_OnClick" Image="vietnam_flag.png" BackgroundColor="Transparent"></Button>
+        <Button x:Name="btnEngland" Clicked="btnLanguage_OnClick"  Text="England" TextColor="White" BackgroundColor="Blue"></Button>
+        <Button x:Name="btnRussia" Clicked="btnLanguage_OnClick" Text="Russia" TextColor="White" BackgroundColor="Blue"></Button>
+        <Button x:Name="btnChina" Clicked="btnLanguage_OnClick" Text="China" TextColor="White" BackgroundColor="Blue"></Button>
+      </StackLayout>
+
+      <StackLayout HorizontalOptions="Center">
+        <Label Text="Please choose your language" FontSize="15" FontAttributes="Bold, Italic" TextColor="Gray"/>
+      </StackLayout>
+
+      <StackLayout HorizontalOptions="Center">
+        <Button x:Name="btnExit" Clicked="btnExit_OnClick" Text="Exit" TextColor="White" BackgroundColor="Blue"></Button>
+      </StackLayout>
+
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

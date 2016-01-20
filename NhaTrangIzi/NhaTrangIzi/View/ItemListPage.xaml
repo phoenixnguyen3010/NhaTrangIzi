@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NhaTrangIzi.View.ItemListPage">
+  <ListView x:Name="ItemListView" ItemsSource="{Binding News}" HasUnevenRows="True">
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <StackLayout Orientation="Vertical">
+            <Grid BackgroundColor="Transparent" HeightRequest="5"/>
+            <StackLayout Orientation="Vertical" Padding="10" HeightRequest="100" BackgroundColor="Purple">
+              <Label Font="Bold,20" Text="{Binding Header}" />
+              <Label Font="16" Text="{Binding Text}" />
+            </StackLayout>
+          </StackLayout>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+  </ListView>
+
+</ContentPage>
